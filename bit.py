@@ -30,7 +30,8 @@ bot = telepot.Bot(token)
 bot.message_loop(handler)
 
 while True:
-    time.sleep(900)
+    time.sleep(600) 
+    ##// Timeinfochanging //## 
     price = requests.get(site).json()
     #print (price[0]['price_usd'])
     connection = sqlite3.connect('bitcoin.db')
